@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esther's WISDOM Academy</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="./css/animate.css" rel="stylesheet">
     <link href="./css/bootsnav.css" rel="stylesheet">
     <link href="./css/elegant-icons.css" rel="stylesheet">
@@ -40,23 +41,23 @@
                     <div class="info box">
                         <ul>
                             <li>
-                                <span><i class="fas fa-map"></i> Address</span>California, TX 70240
+                                <span><i class="fa fa-map"></i> Address</span>California, TX 70240
                             </li>
                             <li>
-                                <span><i class="fas fa-envelope-open"></i> Email</span>Info@estherwisdomacademy.com.ng
+                                <span><i class="fa fa-envelope-open"></i> Email</span>Info@estherwisdomacademy.com.ng
                             </li>
                             <li>
-                                <span><i class="fas fa-phone"></i> Contact</span>+123 456 7890
+                                <span><i class="fa fa-phone"></i> Contact</span>+123 456 7890
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="user-login text-end col-lg-4">
-                    <a class="popup-with-form" href="#register-form">
-                        <i class="fas fa-edit"></i> Register
+                    <a class="" href="register.html">
+                        <i class="fa fa-edit"></i> Register
                     </a>
-                    <a class="" href="/admin/login">
-                        <i class="fas fa-user"></i> Login
+                    <a class="" href="#">
+                        <i class="fa fa-user"></i> Login
                     </a>
                 </div>
             </div>
@@ -73,11 +74,11 @@
 
             <div class="navbar-brand-left">
                 <!-- Start Header Navigation -->
-                <div class="navbar-header">
+                <div class="navbar-header d-flex">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="nav-link active" aria-current="page" href="home">
+                    <a class="nav-link " aria-current="page" href="index.html">
                         <img src="./images/logo.jpg" class="logo" alt="Logo">
                     </a>
                 </div>
@@ -87,8 +88,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
 
-                <a class="nav-link active" aria-current="page" href="home">
-                    <img src="./images/logo.jpg" class="logo" alt="Logo">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                    <img src="./images/logo.jpg" class="logo w-50" alt="Logo">
                 </a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                     <i class="fa fa-times"></i>
@@ -96,19 +97,29 @@
 
                 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                     <li class="">
-                        <a class="nav-link active" aria-current="page" href="home">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="">
-                        <a class="nav-link active " href="#about-us">About Us</a>
+                        <a class="nav-link  " href="#about-us">About Us</a>
                     </li>
                     <li class="">
-                        <a class="nav-link active " href="#Courses">Courses</a>
+                        <a class="nav-link  " href="#Courses">Courses</a>
                     </li>
                     <li class="">
-                        <a class="nav-link @if(url()->current()==route('connect')) 'active "
-                            href="{{ route('connect') }}">Let's Connect</a>
+                        <a class="nav-link"
+                            href="contact.html">Let's Connect</a>
                     </li>
-
+                    <li class="dropdown d-lg-none">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Get Started</a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="" href="register.html">
+                                <i class="fa fa-edit"></i> Register
+                            </a></li>
+                            <li><a class="" href="/admin/login">
+                                <i class="fa fa-user"></i> Login
+                            </a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
 
@@ -175,7 +186,6 @@
                         <img src="./images/about.jpg" alt="About us">
                     </div>
                     <div class="col-lg-6 info">
-                        <h5>EWA</h5>
                         <h2>About Esther's WISDOM Academy (EWA)</h2>
                         <p>Esther's WISDOM Academy (EWA), founded by Dr. Esther Rex Fubara-Manuel, is a mentoring
                             platform for Christian ladies, wives, mothers, career women, and ministers. EWA empowers
@@ -186,7 +196,7 @@
                             Crown of Twelve Stars, signifying their readiness to shine as victorious daughters of Zion.
                         </p>
                         <p>"Let them that love Him be as the sun when he goeth forth in his might" (Judges 5:31).</p>
-                        <a href="#" class="btn btn-dark effect btn-sm">Learn More</a>
+                        <a href="./register.html" class="btn btn-dark effect btn-sm">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -349,7 +359,7 @@
         <div class="container">
             <div class="content-box">
                 <div class="row">
-
+                    
                     <div class="col-lg-6 info text-light align-content-center">
                         <h2>ONE YEAR CURRICULUM IMPLEMENTATION</h2>
                         <p>Inspired by Queen Esther’s transformative journey in the palace of Shushan (Esther 2:7-15),
@@ -369,7 +379,7 @@
                             <div class="col-lg-6 col-md-6 single-item">
                                 <div class="item">
                                     <a href="#">
-                                        <i class="flaticon-feature"></i>
+                                        <img width="50" src="./images/feature.png" alt="">
                                         <div class="info">
                                             <h4>FIRST TIER</h4>
                                             <span class="fs-6">INTENSIVE LECTURES (October - December)</span>
@@ -382,7 +392,7 @@
                             <div class="col-lg-6 col-md-6 single-item">
                                 <div class="item">
                                     <a href="#">
-                                        <i class="flaticon-interaction"></i>
+                                        <img width="50" src="./images/interactions.png" alt="">
                                         <div class="info">
                                             <h4>SECOND TIER</h4>
                                             <span class="fs-6">INTERACTIVE MENTORING (January-March)</span>
@@ -395,7 +405,7 @@
                             <div class="col-lg-6 col-md-6 single-item">
                                 <div class="item">
                                     <a href="#">
-                                        <i class="flaticon-conveyor"></i>
+                                        <img width="50" src="./images/experience.png" alt="">
                                         <div class="info">
                                             <h4>THIRD TIER</h4>
                                             <span class="fs-6">HANDS-ON-EXPERIENCE (APRIL - JUNE) </span>
@@ -406,7 +416,7 @@
                             <div class="col-lg-6 col-md-6 single-item">
                                 <div class="item">
                                     <a href="#">
-                                        <i class="flaticon-conveyor"></i>
+                                        <img width="50" src="./images/research.png" alt="">
                                         <div class="info">
                                             <h4>FOURTH TIER</h4>
                                             <span class="fs-6">ARMCHAIR RESEARCH (July - September)</span>
@@ -423,7 +433,7 @@
         </div>
     </div>
 
-    <div id="Courses" class="popular-courses circle bg-gray carousel-shadow default-padding">
+    <div id="Courses" class="popular-courses circle bg-gray-hard carousel-shadow default-padding">
         <div class="container">
             <div class="row">
                 <div class="site-heading text-center">
@@ -451,7 +461,6 @@
                                 <p>EWA offers practical teaching, mentorship, and Q&A sessions to address challenges
                                     that hinder women from living fully and fulfilling their purpose.</p>
                                 <div class="bottom-info text-center">
-                                    <a href="#">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -466,7 +475,6 @@
                                 <p>EWA connects students with mentors and professionals, building their capacity for
                                     success in life, relationships, business and ministry.</p>
                                 <div class="bottom-info text-center">
-                                    <a href="#">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -481,7 +489,6 @@
                                 <p>EWA emphasizes living Christianity as a practical new life, offering a curriculum
                                     focused on solutions, success, and service.</p>
                                 <div class="bottom-info text-center">
-                                    <a href="#">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -496,7 +503,6 @@
                                 <p>EWA teaches students to combine ministry with "tent making," turning careers into
                                     mission fields for financial and spiritual impact.</p>
                                 <div class="bottom-info text-center">
-                                    <a href="#">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -511,7 +517,6 @@
                                 <p>EWA graduates serve God without needing titles, following mentors who impacted lives
                                     as queens, wives, and mothers.</p>
                                 <div class="bottom-info text-center">
-                                    <a href="#">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -526,7 +531,6 @@
                                 <p>Obedience to the call of God and joyful service is therapeutic (Exodus 23;35-26; John
                                     15:16; Esther 4:12-16).</p>
                                 <div class="bottom-info text-center">
-                                    <a href="#">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -555,7 +559,7 @@
                         <!-- Single Item -->
                         <div class="advisor-item">
                             <div class="info-box">
-                                <!-- <img src="./images/team.jpg" alt="Thumb">   -->
+                                <img src="./images/team.jpg" alt="Thumb">
                                 <div class="info-title">
                                     <h4>ANNA</h4>
                                     <span>Effective Prayer Ministry</span>
@@ -576,7 +580,7 @@
                         </div>
                         <div class="advisor-item">
                             <div class="info-box">
-                                <!-- <img src="./images/team.jpg" alt="Thumb">   -->
+                                <img src="./images/team.jpg" alt="Thumb">
                                 <div class="info-title">
                                     <h4>NAOMI</h4>
                                     <span>Mentoring/ Pastoring Leadership.</span>
@@ -597,7 +601,7 @@
                         </div>
                         <div class="advisor-item">
                             <div class="info-box">
-                                <!-- <img src="./images/team.jpg" alt="Thumb">   -->
+                                <img src="./images/team.jpg" alt="Thumb">
                                 <div class="info-title">
                                     <h4>DEBORAH</h4>
                                     <span>Effective Leadership</span>
@@ -618,7 +622,7 @@
                         </div>
                         <div class="advisor-item">
                             <div class="info-box">
-                                <!-- <img src="./images/team.jpg" alt="Thumb">   -->
+                                <img src="./images/team.jpg" alt="Thumb">
                                 <div class="info-title">
                                     <h4>SAMARITAN WOMAN</h4>
                                     <span>The great commission</span>
@@ -639,7 +643,7 @@
                         </div>
                         <div class="advisor-item">
                             <div class="info-box">
-                                <!-- <img src="./images/team.jpg" alt="Thumb">   -->
+                                <img src="./images/team.jpg" alt="Thumb">
                                 <div class="info-title">
                                     <h4>HANNAH</h4>
                                     <span>Child Evangelism</span>
@@ -660,7 +664,7 @@
                         </div>
                         <div class="advisor-item">
                             <div class="info-box">
-                                <!-- <img src="./images/team.jpg" alt="Thumb">   -->
+                                <img src="./images/team.jpg" alt="Thumb">
                                 <div class="info-title">
                                     <h4>SARAH</h4>
                                     <span>Marriage Mentoring</span>
@@ -681,7 +685,7 @@
                         </div>
                         <div class="advisor-item">
                             <div class="info-box">
-                                <!-- <img src="./images/team.jpg" alt="Thumb">   -->
+                                <img src="./images/team.jpg" alt="Thumb">
                                 <div class="info-title">
                                     <h4>JAEL</h4>
                                     <span>Healing and Deliverance</span>
@@ -702,7 +706,7 @@
                         </div>
                         <div class="advisor-item">
                             <div class="info-box">
-                                <!-- <img src="./images/team.jpg" alt="Thumb">   -->
+                                <img src="./images/team.jpg" alt="Thumb">
                                 <div class="info-title">
                                     <h4>DORCAS</h4>
                                     <span>Ministry of Helps</span>
@@ -723,7 +727,7 @@
                         </div>
                         <div class="advisor-item">
                             <div class="info-box">
-                                <!-- <img src="./images/team.jpg" alt="Thumb">   -->
+                                <img src="./images/team.jpg" alt="Thumb">
                                 <div class="info-title">
                                     <h4>SHUNAMITE WOMAN</h4>
                                     <span>Ministerial Helps</span>
@@ -744,7 +748,7 @@
                         </div>
                         <div class="advisor-item">
                             <div class="info-box">
-                                <!-- <img src="./images/team.jpg" alt="Thumb">   -->
+                                <img src="./images/team.jpg" alt="Thumb">
                                 <div class="info-title">
                                     <h4>PRISCILLIA</h4>
                                     <span>Teaching ministry</span>
@@ -765,7 +769,7 @@
                         </div>
                         <div class="advisor-item">
                             <div class="info-box">
-                                <!-- <img src="./images/team.jpg" alt="Thumb">   -->
+                                <img src="./images/team.jpg" alt="Thumb">
                                 <div class="info-title">
                                     <h4>ESTHER</h4>
                                     <span>Creative writing ministry</span>
@@ -786,7 +790,7 @@
                         </div>
                         <div class="advisor-item">
                             <div class="info-box">
-                                <!-- <img src="./images/team.jpg" alt="Thumb">   -->
+                                <img src="./images/team.jpg" alt="Thumb">
                                 <div class="info-title">
                                     <h4>MIRIAM</h4>
                                     <span>Creative Music ministry</span>
@@ -813,14 +817,127 @@
         </div>
     </section>
     <hr>
+    <footer class="bg-dark default-padding-top text-light">
+        <div class="container">
+            <div class="f-items">
+                <div class="row">
+                    <div class="col-lg-4 item">
+                        <div class="f-item">
+                            <img src="./images/logo.jpg" alt="Logo">
+                            <p>"Let them that love Him be as the sun when he goeth forth in his might" (Judges 5:31).</p>
+                            <div class="social">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6 item">
+                        <div class="f-item link">
+                            <h4>Links</h4>
+                            <ul>
+                                <li>
+                                    <a href="./index.html#Courses">Courses</a>
+                                </li>
+                                <li>
+                                    <a href="./index.html#about-us">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="register.html">Get Started</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6 item">
+                        <div class="f-item link">
+                            <h4>Support</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Forums</a>
+                                </li>
+                                <li>
+                                    <a href="#">Community</a>
+                                </li>
+                                <li>
+                                    <a href="#">Study Packs</a>
+                                </li>
+                                <li>
+                                    <a href="#">Feedback</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 item">
+                        <div class="f-item recent-post">
+                            <h4>Popular Courses</h4>
+                            <ul>
+                                <li>
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="./images/mission-img.jpg" alt="Thumb">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <a href="#">Subjects allied to Creative arts and design</a>
+                                        <div class="meta-title">
+                                            <span class="post-date">12 Feb, 2024</span> - By <a href="#">Esther</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="./images/mission-img.jpg" alt="Thumb">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <a href="#">Business and administrative subjects</a>
+                                        <div class="meta-title">
+                                            <span class="post-date">12 Feb, 2024</span> - By <a href="#">Esther</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>&copy; Copyright <script>document.write(new Date().getFullYear())</script>. All Rights Reserved</p>
+                    </div>
+                    <div class="col-lg-6 text-end link">
+                    <p>Crafted By <a href="https://daveshoope.com/" target="_blank">Daveshoope Inc</a></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
 
 
 
 
-
-    <script>
-
-    </script>
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery.appear.js"></script>
@@ -834,6 +951,7 @@
     <script src="./js/loopcounter.js"></script>
     <script src="./js/jquery.nice-select.min.js"></script>
     <script src="./js/bootsnav.js"></script>
+    <script src="./js/bootstrap.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

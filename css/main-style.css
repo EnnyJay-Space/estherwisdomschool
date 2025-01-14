@@ -251,8 +251,8 @@ pre {
 
 input:focus, textarea:focus, 
  select:focus {
-  outline: none;
-  box-shadow: inherit;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 ul {
@@ -2285,7 +2285,7 @@ body, .banner-area,
     margin-top: -30px;
 }
 
-.what-learn-area .categories i {
+.what-learn-area .categories img {
     display: inline-block;
     color: #10c45c;
     font-size: 45px;
@@ -6436,7 +6436,7 @@ body, .banner-area,
 .contact-info-area .contact-info .item .info h4 {
   font-weight: 600;
   margin-bottom: 10px;
-  text-transform: uppercase;
+  /* text-transform: Cap; */
 }
 
 .contact-info-area .contact-info .item .info p {
@@ -6453,7 +6453,7 @@ body, .banner-area,
 }
 
 .contact-info-area .maps-form {
-  display: inline-block;
+  /* display: inline-block; */
   margin-top: -10px;
 }
 
@@ -6472,13 +6472,13 @@ body, .banner-area,
   height: 465px;
   margin-bottom: -10px;
   margin-top: 10px;
-  position: relative;
+  /* position: relative; */
   width: 100%;
   z-index: 1;
 }
 
 .contact-info-area .maps-form {
-  display: inline-block;
+  /* display: inline-block; */
   margin-top: -10px;
 }
 
@@ -6597,6 +6597,23 @@ form img.loader {
 /* ============================================================== 
      # Popup Form 
 =================================================================== */
+form {
+  font-family: poppins;
+}
+form label {
+  float: left;
+  font-family: poppins;
+}
+
+form input {
+  float: left;
+  margin-right: 5px;
+  min-height: 20px;
+  box-shadow: none;
+  
+}
+
+
 
 form.white-popup-block {
   background: var(--white) none repeat scroll 0 0;
@@ -6676,8 +6693,9 @@ form.white-popup-block .login-custom {
 }
 
 form.white-popup-block input {
+  font-family: poppins;
   border: 1px solid #e7e7e7;
-  box-shadow: inherit;
+  box-shadow: none;
 }
 
 form.white-popup-block .lost-pass-link {
@@ -6690,12 +6708,15 @@ form.white-popup-block .lost-pass-link:hover {
 
 form.white-popup-block label {
   float: left;
+  font-family: poppins;
 }
 
 form.white-popup-block label input {
   float: left;
   margin-right: 5px;
   min-height: 20px;
+  box-shadow: none;
+  
 }
 
 form.white-popup-block button[type="submit"] {
