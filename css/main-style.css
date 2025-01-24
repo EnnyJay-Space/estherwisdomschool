@@ -1222,6 +1222,13 @@ body, .banner-area,
   width: 100%;
   object-fit: cover;
 }
+.founder_img{
+  width: 100%;
+  height: 600px !important;
+  object-fit: cover;
+  object-position: top ;
+  
+}
 
 /* Carousel Control */
 .banner-area .carousel-control {
